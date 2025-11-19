@@ -40,12 +40,12 @@ export function Projects() {
       demo: 'https://demo.com',
     },
     {
-      title: 'Análisis de Sentimientos',
+      title: 'Detección de Objetos',
       category: 'ia',
       description:
-        'Modelo de NLP para analizar sentimientos en textos usando redes LSTM y procesamiento de lenguaje natural.',
-      image: '/sentiment-analysis-nlp.jpg',
-      tags: ['Python', 'PyTorch', 'LSTM', 'NLP'],
+        'Sistema de detección de objetos en tiempo real usando modelos YOLO para identificar y localizar múltiples objetos en imágenes y video.',
+      image: '/object-detection-ai-yolo.jpg',
+      tags: ['Python', 'YOLO', 'OpenCV', 'Deep Learning'],
       github: 'https://github.com',
       demo: 'https://demo.com',
     },
@@ -56,16 +56,6 @@ export function Projects() {
         'Aplicación web interactiva para visualizar métricas de modelos de ML y resultados de entrenamiento en tiempo real.',
       image: '/data-visualization-dashboard.png',
       tags: ['React', 'Next.js', 'D3.js', 'Chart.js'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-    },
-    {
-      title: 'Predictor de Series',
-      category: 'ia',
-      description:
-        'Modelo de deep learning para predicción de series temporales usando arquitecturas RNN y LSTM avanzadas.',
-      image: '/time-series-prediction.jpg',
-      tags: ['Python', 'TensorFlow', 'RNN', 'Time Series'],
       github: 'https://github.com',
       demo: 'https://demo.com',
     },

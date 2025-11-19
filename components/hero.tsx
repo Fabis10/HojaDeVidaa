@@ -28,6 +28,15 @@ export function Hero() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a')
+    link.href = '/cv-fabian-martinez.pdf'
+    link.download = 'CV-Fabian-Martinez.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section
       id="inicio"
@@ -64,8 +73,9 @@ export function Hero() {
                 Ver Proyectos
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </Button>
-              <Button onClick={() => scrollToSection('contacto')} variant="outline" size="lg">
-                Contactar
+              <Button onClick={handleDownloadCV} variant="outline" size="lg" className="group">
+                <Download className="h-4 w-4 mr-2 group-hover:animate-bounce" />
+                Descargar CV
               </Button>
             </div>
 

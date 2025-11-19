@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Card } from '@/components/ui/card'
-import { BookOpen, GraduationCap, Award, Lightbulb } from 'lucide-react'
+import { BookOpen, GraduationCap, Award, Lightbulb, Briefcase } from 'lucide-react'
 
 export function Experience() {
   const [isVisible, setIsVisible] = useState(false)
@@ -27,45 +27,18 @@ export function Experience() {
 
   const experiences = [
     {
-      type: 'learning',
-      icon: Lightbulb,
-      title: 'Proyectos de IA Práctica',
-      company: 'Aprendizaje Autodidacta',
-      period: '2023 - Presente',
+      type: 'internship',
+      icon: Briefcase,
+      title: 'Prácticas Profesionales',
+      company: 'Azure Technologies',
+      period: '2024',
       description:
-        'Desarrollando proyectos prácticos de machine learning y deep learning para aplicar conocimientos teóricos en casos reales.',
+        'Prácticas profesionales donde desarrollé experiencia práctica en desarrollo web, gestión de bases de datos, administración de servidores y tecnologías de inteligencia artificial.',
       achievements: [
-        'Implementé CNNs para clasificación de imágenes',
-        'Entrenamiento de modelos con TensorFlow y PyTorch',
-        'Experimentación con diferentes arquitecturas neuronales',
-      ],
-    },
-    {
-      type: 'course',
-      icon: BookOpen,
-      title: 'Especialización en Deep Learning',
-      company: 'Cursos Online & Certificaciones',
-      period: '2022 - 2023',
-      description:
-        'Estudio intensivo de redes neuronales, deep learning y algoritmos de machine learning a través de cursos especializados.',
-      achievements: [
-        'Completé cursos de Andrew Ng en Coursera',
-        'Aprendí arquitecturas CNN, RNN y LSTM',
-        'Práctica con datasets reales (MNIST, CIFAR-10)',
-      ],
-    },
-    {
-      type: 'learning',
-      icon: Award,
-      title: 'Desarrollo Web Moderno',
-      company: 'Formación Autodidacta',
-      period: '2021 - 2022',
-      description:
-        'Aprendiendo tecnologías web modernas para crear aplicaciones interactivas y visualizar resultados de modelos de IA.',
-      achievements: [
-        'Dominio de React y Next.js',
-        'Creación de dashboards para visualización de datos',
-        'Integración de modelos de ML con aplicaciones web',
+        'Desarrollo de sitios web con tecnologías modernas',
+        'Trabajo con bases de datos SQL y NoSQL',
+        'Administración y configuración de servidores',
+        'Implementación de soluciones con IA',
       ],
     },
   ]
@@ -74,15 +47,15 @@ export function Experience() {
     {
       type: 'education',
       icon: GraduationCap,
-      title: 'Estudiante de Ingeniería',
-      company: 'Universidad',
-      period: '2020 - Presente',
+      title: 'Estudiante de Ingeniería de Software',
+      company: 'Universidad Uniempresarial',
+      period: '2025 - Presente',
       description:
-        'Formación en fundamentos de programación, matemáticas y ciencias de la computación con enfoque en inteligencia artificial.',
+        'Formación en desarrollo de software, programación y tecnologías modernas.',
       achievements: [
-        'Matemáticas para IA: Álgebra lineal y cálculo',
-        'Estructuras de datos y algoritmos',
-        'Participación en proyectos de investigación en ML',
+        'Fundamentos de programación',
+        'Desarrollo web y aplicaciones',
+        'Aprendizaje continuo en nuevas tecnologías',
       ],
     },
   ]
@@ -106,7 +79,7 @@ export function Experience() {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-4" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Formación continua en inteligencia artificial y desarrollo de software
+            Experiencia práctica en desarrollo y tecnología
           </p>
         </div>
 

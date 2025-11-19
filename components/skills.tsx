@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Card } from '@/components/ui/card'
-import { Brain, Code2, Database, Cpu, BarChart3, Layers } from 'lucide-react'
+import { Code2, Users, Heart } from 'lucide-react'
 
 export function Skills() {
   const [isVisible, setIsVisible] = useState(false)
@@ -27,63 +27,33 @@ export function Skills() {
 
   const skillCategories = [
     {
-      icon: Brain,
-      title: 'Machine Learning',
-      skills: [
-        { name: 'Redes Neuronales', level: 70 },
-        { name: 'Deep Learning', level: 65 },
-        { name: 'TensorFlow', level: 60 },
-        { name: 'PyTorch', level: 55 },
-      ],
-    },
-    {
       icon: Code2,
       title: 'Programación',
       skills: [
-        { name: 'Python', level: 80 },
+        { name: 'Python', level: 75 },
         { name: 'JavaScript', level: 70 },
-        { name: 'TypeScript', level: 65 },
-        { name: 'React', level: 60 },
+        { name: 'HTML & CSS', level: 80 },
+        { name: 'Git & GitHub', level: 75 },
       ],
     },
     {
-      icon: Database,
-      title: 'Data Science',
+      icon: Users,
+      title: 'Liderazgo',
       skills: [
-        { name: 'NumPy & Pandas', level: 75 },
-        { name: 'Data Processing', level: 70 },
-        { name: 'SQL', level: 65 },
-        { name: 'Jupyter Notebooks', level: 80 },
+        { name: 'Gestión de Equipos', level: 80 },
+        { name: 'Comunicación', level: 85 },
+        { name: 'Toma de Decisiones', level: 75 },
+        { name: 'Resolución de Problemas', level: 82 },
       ],
     },
     {
-      icon: Cpu,
-      title: 'IA & Modelos',
+      icon: Heart,
+      title: 'Compañerismo',
       skills: [
-        { name: 'CNNs', level: 60 },
-        { name: 'RNNs & LSTM', level: 55 },
-        { name: 'Transfer Learning', level: 50 },
-        { name: 'Model Training', level: 65 },
-      ],
-    },
-    {
-      icon: BarChart3,
-      title: 'Análisis & Visual.',
-      skills: [
-        { name: 'Matplotlib', level: 75 },
-        { name: 'Seaborn', level: 70 },
-        { name: 'Data Visualization', level: 72 },
-        { name: 'Statistical Analysis', level: 65 },
-      ],
-    },
-    {
-      icon: Layers,
-      title: 'Web Dev',
-      skills: [
-        { name: 'Next.js', level: 65 },
-        { name: 'Tailwind CSS', level: 70 },
-        { name: 'HTML & CSS', level: 75 },
-        { name: 'Git & GitHub', level: 80 },
+        { name: 'Trabajo en Equipo', level: 90 },
+        { name: 'Empatía', level: 85 },
+        { name: 'Colaboración', level: 88 },
+        { name: 'Apoyo Mutuo', level: 87 },
       ],
     },
   ]
@@ -103,7 +73,7 @@ export function Skills() {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Habilidades</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-4" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tecnologías y herramientas que estoy dominando en mi camino hacia la IA
+            Habilidades técnicas y personales que aplico en cada proyecto
           </p>
         </div>
 
